@@ -1,4 +1,5 @@
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
+use ju_tcs_rust_23_2::*;
 
 use clap::Parser;
 
@@ -8,8 +9,8 @@ enum Command {
     Tail{n:usize,path:PathBuf},
 }
 
-fn head(path: &Path, n: usize) -> Vec<String>{todo!()}
-fn tail(path: &Path, n: usize) -> Vec<String>{todo!()}
+//fn head(path: &Path, n: usize) -> Vec<String>{todo!()}
+//fn tail(path: &Path, n: usize) -> Vec<String>{todo!()}
 
 fn main() {
     let com = Command::parse();
